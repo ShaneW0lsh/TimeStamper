@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: space-evenly; /* Puts one div on the left and the other on the right */
+    align-items: center; /* Centers them vertically */
+    width: 100%;
+    height: 100vh; /* Full viewport height to ensure vertical centering */
+    padding: 0 20px; /* Optional: adds some padding */
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+}
+
+.timestamp-container {
+    font-size: 20px;
+    width: 40%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.chunkier-button {
+    height: 7vh;
+    font-size: x-large;
+}
