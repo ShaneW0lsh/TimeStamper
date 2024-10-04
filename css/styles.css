@@ -26,3 +26,31 @@
     height: 7vh;
     font-size: x-large;
 }
+
+.smoky-background {
+    background-color: whitesmoke;
+}
+
+.stopwatch-container {
+    position: relative;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.stopwatch-container:hover {
+    background-color: #007bff; /* Light blue color */
+}
+
+.stopwatch-container::after {
+    content: "\1F5D1\FE0F"; /* Trash can emoji */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1;
+    font-size: 4em;
+}
+
+.stopwatch-container:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
