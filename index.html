@@ -10,26 +10,7 @@
 <script type="text/javascript" href="js/bootstrap.js">
 </script>
 
-<div class="container">
-    <div class="timestamp-container">
-        <ol class="list-group list-group-numbered">
-            <li class="list-group-item">00:10:03</li>
-            <li class="list-group-item">00:15:21</li>
-            <li class="list-group-item">00:16:01</li>
-            <li class="list-group-item">00:21:48</li>
-            <li class="list-group-item">00:21:48</li>
-            <li class="list-group-item">00:21:48</li>
-            <li class="list-group-item">00:21:48</li>
-            <li class="list-group-item">00:21:48</li>
-            <li class="list-group-item">00:21:48</li>
-            <li class="list-group-item">00:21:48</li>
-            <li class="list-group-item">00:21:48</li>
-            <li class="list-group-item">00:21:48</li>
-            <li class="list-group-item">00:21:48</li>
-            <li class="list-group-item">00:21:48</li>
-        </ol>
-    </div>
-
+<div class="container full-width-container">
     <div class="time-and-controls-container">
         <div id="timerContainer" class="stopwatch-container smoky-background text-center p-2 md-4 rounded border border-secondary">
             <span id="timerDisplay" class="display-4 text-primary">00:00:00</span>
@@ -40,6 +21,11 @@
             <button id="stop-button" type="button" disabled class="btn btn-outline-danger bg-danger-subtle chunkier-button">Stop interview</button>
         </div>
     </div>
+
+    <div class="timestamp-container">
+        <ol class="list-group" id="timestamp-list"></ol>
+    </div>
+
 </div>
 <script src="js/stopwatch.js"></script>
 </body>
